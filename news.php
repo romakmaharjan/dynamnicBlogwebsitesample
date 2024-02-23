@@ -8,8 +8,6 @@ $newsdata =[
 ];
 ?>
 
-<!DOCTYPE html>
-<html>
 
 <head>
     <title>Dynamic Title Box News Page</title>
@@ -25,7 +23,7 @@ $newsdata =[
     </style>
 </head>
 
-<body>
+<section>
     <h1>News List</h1>
     <?php foreach ($newsdata as $news) { ?>
     <div class="box">
@@ -33,6 +31,4 @@ $newsdata =[
         <p><?php echo $news['description']; ?></p>
     </div>
     <?php } ?>
-</body>
-
-</html>
+</section>
